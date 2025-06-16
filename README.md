@@ -68,8 +68,8 @@ flowchart TD
 ```mermaid
 sequenceDiagram
     Client->>FastAPI: POST /ask?type=exam
-    FastAPI->>Routing Agent: Запрос
-    Router->>RabbitMQ: В очередь учебных запросов
+    FastAPI->>Router: Запрос
+    Router->>RabbitMQ: В очередь academic
     RabbitMQ->>Search Agent: Задание
     Search Agent->>VectorDB: Поиск контекста
     VectorDB-->>Search Agent: 3 чанка
