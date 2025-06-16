@@ -69,7 +69,7 @@ flowchart TD
 sequenceDiagram
     Client->>FastAPI: POST /ask?type=exam
     FastAPI->>Router: Запрос
-    Router->>RabbitMQ: В очередь academic
+    Router->>RabbitMQ: В очередь запросов
     RabbitMQ->>Search Agent: Задание
     Search Agent->>VectorDB: Поиск контекста
     VectorDB-->>Search Agent: 3 чанка
