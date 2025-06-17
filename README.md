@@ -25,7 +25,7 @@ flowchart TD
     API -->|"Route Request"| A1[Agent 1: Routing]
 
     %% ===== A/B тестирование пометка =====
-    API -->|"Assign group (A/B)"| A3[Generation Agent]
+    API -->|"Назначение группы (A/B)"| A3[Generation Agent]
 
     %% ===== Этап 2: Агенты =====
     subgraph MA["Этап 2: Multi-Agent"]
@@ -37,7 +37,7 @@ flowchart TD
         A2 -->|"Поиск по эмбеддингам"| VDB
         A2 -->|"Контекст + метаданные"| Q3[(RabbitMQ: gen)]
         Q3 --> A3
-        A3 -->|"Выбор модели/промпта"| PROMPT[Prompt Strategy]
+        A3 -->|"Выбор модели промпта"| PROMPT[Prompt Strategy]
         PROMPT -->|"Промпт: Контекст + История + Шаблон"| LLM[(LLM: GigaChat/YandexGPT)]
         LLM -->|"Валидированный ответ"| A3
         A3 -->|"Форматированный ответ"| API
