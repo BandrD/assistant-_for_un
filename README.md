@@ -13,47 +13,50 @@
 flowchart TD
     %% ===== Этап 1: RAG-система =====
     subgraph RAG["Этап 1: RAG Core (Docker)"]
-        D[University Docs] -->|"Загрузка (Docker Volume)"| TS[Text Splitter]
-        TS -->|Разбивка на чанки| EG[Embedding Generator]
-        EG -->|Сохранение| VDB[(VectorDB Chroma or Faiss)]
+        D[University Docs] -->|"Загрузка (Docker Volume)"| PARSER[PDF/Word Parser]
+        PARSER -->|"Извлечение текста + Очистка"| TS[Text Splitter]
+        TS -->|"Разбивка на чанки"| EG[Embedding Generator]
+        EG -->|"Сохранение эмбеддингов + метаданные (source_id, date, doc_type)"| VDB[(VectorDB: Chroma/Faiss)]
         style VDB fill:#f9f,stroke:#333
     end
 
     %% ===== Клиентский запрос =====
     C[Client] -->|"POST /ask?type=exam (Когда сессия?)"| API[FastAPI]
-    API -->|Route Request| A1[Routing Agent]
+    API -->|"Route Request"| A1[Agent 1: Routing]
+
+    %% ===== A/B тестирование пометка =====
+    API -->|"Assign group (A/B)"| A3[Generation Agent]
 
     %% ===== Этап 2: Агенты =====
     subgraph MA["Этап 2: Multi-Agent"]
         ENV[Env: GIGACHAT_API_KEY] -->|"Load API Key"| A3
-        A1 -->|"Учебные запросы"| Q1[(RabbitMQ search)]
-        A1 -->|"Админ. запросы"| Q2[(RabbitMQ admin)]
-        
+        A1 -->|"Учебные запросы"| Q1[(RabbitMQ: search)]
+        A1 -->|"Админ. запросы"| Q2[(RabbitMQ: admin)]
         Q1 --> A2[Search Agent]
         Q2 --> A2
-        A2 -->|"Поиск по эмбеддингам Логирование"| VDB
-        A2 -->|"Контекст + метаданные"| Q3[(RabbitMQ gen)]
-        
-        Q3 --> A3[Generation Agent]
-        A3 -->|"Промпт: Контекст История Шаблон"| LLM[(LLM: GigaChat)]
-        LLM -->|Валидация ответа| A3
-        A3 -->|Форматированный ответ| API
+        A2 -->|"Поиск по эмбеддингам"| VDB
+        A2 -->|"Контекст + метаданные"| Q3[(RabbitMQ: gen)]
+        Q3 --> A3
+        A3 -->|"Select prompt/model by group"| PROMPT[Prompt Strategy]
+        PROMPT -->|"Промпт: Контекст + История + Шаблон"| LLM[(LLM: GigaChat/YandexGPT)]
+        LLM -->|"Валидированный ответ"| A3
+        A3 -->|"Форматированный ответ"| API
     end
 
     %% ===== Этап 3: Airflow =====
     subgraph AF["Этап 3: Airflow Pipeline"]
-        DAG[Airflow DAG] -->|ingest_docs: Новые документы PDF Word парсинг| D
-        DAG -->|reindex: Обновление индекса Оптимизация| VDB
-        DAG -->|validate: Retry 3 попытки Проверка качества| LLM
+        DAG[Airflow DAG] -->|"ingest_docs: Новые PDF, DOCX"| D
+        DAG -->|"reindex: Обновление индекса"| VDB
+        DAG -->|"validate: Retry до 3"| LLM
         style DAG fill:#2c3,stroke:#333
     end
 
     %% ===== Этап 4: MLflow =====
     subgraph ML["Этап 4: MLflow Tracking"]
-        A2 -->|Параметры Модель эмбеддингов Размер чанков| MLF[MLflow]
-        A3 -->|Промпты Шаблоны Токены| MLF
-        API -->|A/B тесты Стратегии поиска Модели LLM| MLF
-        MLF -.->|Model Registry| A3
+        A2 -->|"Параметры эмбеддингов: модель, размер чанка"| MLF[MLflow]
+        A3 -->|"Промпты, шаблоны, длина, group"| MLF
+        API -->|"A/B тесты: стратегия поиска"| MLF
+        MLF -.->|"Model Registry"| A3
         style MLF fill:#78f,stroke:#333
     end
 
@@ -125,9 +128,12 @@ admin — справки, заявления, процедуры.
 ### RabbitMQ → Generation Agent
 Агент 3 (Generation) получает контекст и генерирует персонализированный ответ.
 
-### Generation Agent → LLM
-LLM (GigaChat или YandexGPT) вызывается через API (ключ загружается из ENV).
-Возвращается сгенерированный текст.
+### Generation Agent → Prompt Strategy
+На основе метки A/B выбирает:разные шаблоны промптов
+или альтернативные LLM (GigaChat vs YandexGPT)
+
+### Prompt Strategy → LLM
+Отправляет окончательный промпт + контекст.
 
 ### LLM → Generation Agent
 Ответ LLM валидируется (на соответствие шаблону, длине, правилам этики).
@@ -143,13 +149,17 @@ DAG ingest_docs запускается по расписанию или триг
 
 ### Airflow → VectorDB
 DAG reindex пересчитывает и оптимизирует индекс в VectorDB.
-Это позволяет удалять устаревшие данные и ускорять поиск.
+Удаление устаревших данных и ускорение поиска.
 
 ### Airflow → LLM
 DAG validate делает контрольный прогон ответов LLM.
 При неудаче включается retry-механизм (например, до 3 попыток).
 
 ## Этап 4: MLflow трекинг 
+
+### FastAPI → Generation Agent
+FastAPI при получении запроса присваивает метку A/B‑теста и передаёт эту информацию Generation Agent. 
+Это влияет на выбор промпта и стратегии генерации. Информация также логируется в MLflow.
 
 ### Search Agent → MLflow
 Логируются параметры генерации эмбеддингов: модель, размер чанков, стратегия нарезки.
