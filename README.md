@@ -37,7 +37,7 @@ flowchart TD
         A2 -->|"Поиск по эмбеддингам"| VDB
         A2 -->|"Контекст + метаданные"| Q3[(RabbitMQ: gen)]
         Q3 --> A3
-        A3 -->|"Select prompt/model by group"| PROMPT[Prompt Strategy]
+        A3 -->|"Выбор модели/промпта"| PROMPT[Prompt Strategy]
         PROMPT -->|"Промпт: Контекст + История + Шаблон"| LLM[(LLM: GigaChat/YandexGPT)]
         LLM -->|"Валидированный ответ"| A3
         A3 -->|"Форматированный ответ"| API
