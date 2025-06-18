@@ -21,7 +21,7 @@ flowchart TD
     end
 
     %% ===== Клиентский запрос =====
-    C[Client] -->|"POST /ask?type=exam (Когда сессия?)"| API[FastAPI]
+    C[Client] -->|"POST /ask?(Когда сессия?)"| API[FastAPI]
     API -->|"Route Request"| A1[Agent 1: Routing]
 
     %% ===== A/B тестирование пометка =====
@@ -70,7 +70,7 @@ flowchart TD
 
 ```mermaid
 sequenceDiagram
-    Client->>FastAPI: POST /ask?type=exam
+    Client->>FastAPI: POST /ask?
     FastAPI->>Router: Запрос
     Router->>RabbitMQ: В очередь запросов
     RabbitMQ->>Search Agent: Задание
