@@ -1,0 +1,127 @@
+version: '3.9'
+
+services:
+  ### FastAPI
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./services/api:/app
+    depends_on:
+      - rabbitmq
+      - generator
+      - router
+      - mlflow
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+
+  ### Routing Agent
+  router:
+    build:
+      context: ./services/router
+      dockerfile: Dockerfile
+    container_name: router
+    volumes:
+      - ./services/router:/app
+    depends_on:
+      - rabbitmq
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+
+  ### Search Agent
+  search:
+    build:
+      context: ./services/search
+      dockerfile: Dockerfile
+    container_name: search
+    volumes:
+      - ./services/search:/app
+      - ./data/chroma:/data/chroma
+    depends_on:
+      - rabbitmq
+      - vectordb
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      VECTOR_DB_PATH: /data/chroma
+
+  ### Generation Agent
+  generator:
+    build:
+      context: ./services/generator
+      dockerfile: Dockerfile
+    container_name: generator
+    volumes:
+      - ./services/generator:/app
+    depends_on:
+      - rabbitmq
+      - mlflow
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      GIGACHAT_API_KEY: ${GIGACHAT_API_KEY}
+      YANDEXGPT_API_KEY: ${YANDEXGPT_API_KEY}
+
+  ### RabbitMQ 
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"     # основной порт для агентов
+      - "15672:15672"   # панель управления
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  ### VectorDB (Chroma data volume)
+  vectordb:
+    image: python:3.10-slim
+    container_name: vectordb
+    volumes:
+      - ./data/chroma:/data/chroma
+    command: tail -f /dev/null
+
+  ### MLflow 
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/mlruns:/mlruns
+    command: mlflow server --backend-store-uri /mlruns --default-artifact-root /mlruns --host 0.0.0.0 --port 5000
+
+  ### Airflow
+  airflow:
+    build:
+      context: ./services/airflow
+      dockerfile: Dockerfile
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./services/airflow:/opt/airflow/dags
+    depends_on:
+      - rabbitmq
+      - mlflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    command: >
+      bash -c "airflow db upgrade &&
+               airflow users create --username admin --password admin \
+                 --firstname Air --lastname Flow --role Admin --email admin@example.com &&
+               airflow webserver"
+
+volumes:
+  chroma_data:
+  mlruns_data:
