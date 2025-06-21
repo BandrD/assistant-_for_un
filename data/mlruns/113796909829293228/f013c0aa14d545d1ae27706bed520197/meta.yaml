@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/f013c0aa14d545d1ae27706bed520197/artifacts
+end_time: 1750515358591
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: f013c0aa14d545d1ae27706bed520197
+run_name: languid-fowl-897
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515357758
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/e08bc8fe18fa47549fb617293c3b4d49/artifacts
+end_time: 1750515003438
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: e08bc8fe18fa47549fb617293c3b4d49
+run_name: defiant-crane-752
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515003423
+status: 3
+tags: []
+user_id: root

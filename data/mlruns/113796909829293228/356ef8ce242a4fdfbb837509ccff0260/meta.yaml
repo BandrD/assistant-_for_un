@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/356ef8ce242a4fdfbb837509ccff0260/artifacts
+end_time: 1750515308132
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 356ef8ce242a4fdfbb837509ccff0260
+run_name: rare-asp-939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515308075
+status: 3
+tags: []
+user_id: root

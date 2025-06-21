@@ -1,11 +1,11 @@
 FROM apache/airflow:2.9.1-python3.10
 
-USER root
+USER airflow
 WORKDIR /app
 
-COPY ./services/airflow/requirements.txt .
+RUN airflow version
+
+COPY ./dags/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./services/airflow/ /opt/airflow/dags/
-
-USER airflow 
+COPY ./dags /opt/airflow/dags/

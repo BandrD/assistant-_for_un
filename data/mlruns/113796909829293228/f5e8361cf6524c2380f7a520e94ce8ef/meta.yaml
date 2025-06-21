@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/f5e8361cf6524c2380f7a520e94ce8ef/artifacts
+end_time: 1750516086408
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: f5e8361cf6524c2380f7a520e94ce8ef
+run_name: learned-hare-818
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516086393
+status: 3
+tags: []
+user_id: root

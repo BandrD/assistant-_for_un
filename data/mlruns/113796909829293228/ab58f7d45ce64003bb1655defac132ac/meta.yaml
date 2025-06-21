@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/ab58f7d45ce64003bb1655defac132ac/artifacts
+end_time: 1750516440006
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: ab58f7d45ce64003bb1655defac132ac
+run_name: kindly-finch-937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516439992
+status: 3
+tags: []
+user_id: root

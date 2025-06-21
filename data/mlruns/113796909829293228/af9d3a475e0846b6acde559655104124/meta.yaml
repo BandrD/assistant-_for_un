@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/af9d3a475e0846b6acde559655104124/artifacts
+end_time: 1750519278807
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: af9d3a475e0846b6acde559655104124
+run_name: monumental-cat-254
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519278790
+status: 3
+tags: []
+user_id: root

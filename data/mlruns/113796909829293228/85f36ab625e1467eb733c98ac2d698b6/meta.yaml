@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/85f36ab625e1467eb733c98ac2d698b6/artifacts
+end_time: 1750511387529
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 85f36ab625e1467eb733c98ac2d698b6
+run_name: unruly-ram-56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511387514
+status: 3
+tags: []
+user_id: root

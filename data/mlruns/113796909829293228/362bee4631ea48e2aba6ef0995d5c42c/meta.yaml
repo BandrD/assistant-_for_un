@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/362bee4631ea48e2aba6ef0995d5c42c/artifacts
+end_time: 1750514461780
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 362bee4631ea48e2aba6ef0995d5c42c
+run_name: adaptable-bear-484
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750514461765
+status: 3
+tags: []
+user_id: root

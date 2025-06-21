@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/e49ea26822444984920e00645d984919/artifacts
+end_time: 1750515672578
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: e49ea26822444984920e00645d984919
+run_name: blushing-boar-653
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515672563
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/00b6b2835fbb4b948b92561c409741f8/artifacts
+end_time: 1750513929993
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 00b6b2835fbb4b948b92561c409741f8
+run_name: calm-goose-890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513929980
+status: 3
+tags: []
+user_id: root

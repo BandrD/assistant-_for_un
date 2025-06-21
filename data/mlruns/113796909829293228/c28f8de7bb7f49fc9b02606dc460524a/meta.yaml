@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/c28f8de7bb7f49fc9b02606dc460524a/artifacts
+end_time: 1750513516131
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: c28f8de7bb7f49fc9b02606dc460524a
+run_name: overjoyed-fish-780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513516117
+status: 3
+tags: []
+user_id: root

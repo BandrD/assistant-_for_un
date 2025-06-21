@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/5696c5a29a5f4fc8a86110f0f6f73fe4/artifacts
+end_time: 1750517801855
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 5696c5a29a5f4fc8a86110f0f6f73fe4
+run_name: shivering-cod-487
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750517801840
+status: 3
+tags: []
+user_id: root

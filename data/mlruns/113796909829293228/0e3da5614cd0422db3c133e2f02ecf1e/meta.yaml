@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/0e3da5614cd0422db3c133e2f02ecf1e/artifacts
+end_time: 1750514698106
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 0e3da5614cd0422db3c133e2f02ecf1e
+run_name: rebellious-hen-836
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750514698087
+status: 3
+tags: []
+user_id: root

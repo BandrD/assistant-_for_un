@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/416cc8ecb08243f29f0f7c8b525fb204/artifacts
+end_time: 1750516204279
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 416cc8ecb08243f29f0f7c8b525fb204
+run_name: adaptable-hog-667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516204265
+status: 3
+tags: []
+user_id: root

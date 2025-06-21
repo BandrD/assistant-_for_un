@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/8536a19f65cd4db890d190abd8578547/artifacts
+end_time: 1750515908494
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 8536a19f65cd4db890d190abd8578547
+run_name: gifted-mink-796
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515908477
+status: 3
+tags: []
+user_id: root

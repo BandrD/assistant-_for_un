@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/cc31ccb470324cdd94dee70ab41920d3/artifacts
+end_time: 1750518215808
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: cc31ccb470324cdd94dee70ab41920d3
+run_name: bedecked-grouse-836
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518215791
+status: 3
+tags: []
+user_id: root

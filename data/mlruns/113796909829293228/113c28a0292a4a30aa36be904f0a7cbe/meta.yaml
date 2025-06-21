@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/113c28a0292a4a30aa36be904f0a7cbe/artifacts
+end_time: 1750516912795
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 113c28a0292a4a30aa36be904f0a7cbe
+run_name: shivering-snail-134
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516912780
+status: 3
+tags: []
+user_id: root

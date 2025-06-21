@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/4196c9839b6d457b82bbb1983fd3e621/artifacts
+end_time: 1750512924387
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 4196c9839b6d457b82bbb1983fd3e621
+run_name: capricious-wolf-6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750512924348
+status: 3
+tags: []
+user_id: root

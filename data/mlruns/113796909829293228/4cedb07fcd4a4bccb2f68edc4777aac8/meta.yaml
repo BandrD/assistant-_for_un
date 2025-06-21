@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/4cedb07fcd4a4bccb2f68edc4777aac8/artifacts
+end_time: 1750517742183
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 4cedb07fcd4a4bccb2f68edc4777aac8
+run_name: unique-doe-488
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750517742169
+status: 3
+tags: []
+user_id: root

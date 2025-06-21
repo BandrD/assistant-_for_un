@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/e4d65077ae35439bbfcc73fbaa99d8a1/artifacts
+end_time: 1750518688647
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: e4d65077ae35439bbfcc73fbaa99d8a1
+run_name: welcoming-kite-613
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518688628
+status: 3
+tags: []
+user_id: root

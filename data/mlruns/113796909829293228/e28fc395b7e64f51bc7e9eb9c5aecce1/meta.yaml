@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/e28fc395b7e64f51bc7e9eb9c5aecce1/artifacts
+end_time: 1750511210565
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: e28fc395b7e64f51bc7e9eb9c5aecce1
+run_name: whimsical-smelt-197
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511210541
+status: 3
+tags: []
+user_id: root

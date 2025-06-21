@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/20f9c7b292a84c55903838ef2abab96c/artifacts
+end_time: 1750513457270
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 20f9c7b292a84c55903838ef2abab96c
+run_name: welcoming-hen-595
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513457254
+status: 3
+tags: []
+user_id: root

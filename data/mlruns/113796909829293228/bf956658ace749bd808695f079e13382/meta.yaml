@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/bf956658ace749bd808695f079e13382/artifacts
+end_time: 1750516499163
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: bf956658ace749bd808695f079e13382
+run_name: painted-newt-24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516499148
+status: 3
+tags: []
+user_id: root

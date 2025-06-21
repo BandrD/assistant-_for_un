@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/c663c286798c4f498e79715f046844bc/artifacts
+end_time: 1750518156714
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: c663c286798c4f498e79715f046844bc
+run_name: thundering-vole-1000
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518156696
+status: 3
+tags: []
+user_id: root

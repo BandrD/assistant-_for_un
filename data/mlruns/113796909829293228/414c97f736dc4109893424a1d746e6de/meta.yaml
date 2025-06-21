@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/414c97f736dc4109893424a1d746e6de/artifacts
+end_time: 1750513751886
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 414c97f736dc4109893424a1d746e6de
+run_name: legendary-lynx-216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513751871
+status: 3
+tags: []
+user_id: root

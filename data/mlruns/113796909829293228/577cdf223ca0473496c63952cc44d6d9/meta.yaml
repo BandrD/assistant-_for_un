@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/577cdf223ca0473496c63952cc44d6d9/artifacts
+end_time: 1750510915784
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 577cdf223ca0473496c63952cc44d6d9
+run_name: puzzled-snipe-272
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750510915743
+status: 4
+tags: []
+user_id: root

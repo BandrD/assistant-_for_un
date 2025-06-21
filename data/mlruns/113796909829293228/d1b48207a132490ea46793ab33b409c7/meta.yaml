@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/d1b48207a132490ea46793ab33b409c7/artifacts
+end_time: 1750516735931
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: d1b48207a132490ea46793ab33b409c7
+run_name: clean-duck-894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516735916
+status: 3
+tags: []
+user_id: root

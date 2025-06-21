@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/f94b9545b0b84fa085def75a096c5996/artifacts
+end_time: 1750516853773
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: f94b9545b0b84fa085def75a096c5996
+run_name: adorable-carp-315
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516853757
+status: 3
+tags: []
+user_id: root

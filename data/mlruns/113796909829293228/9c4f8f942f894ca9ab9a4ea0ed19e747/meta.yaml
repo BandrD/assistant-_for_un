@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/9c4f8f942f894ca9ab9a4ea0ed19e747/artifacts
+end_time: 1750519574772
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 9c4f8f942f894ca9ab9a4ea0ed19e747
+run_name: traveling-snake-220
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519574754
+status: 3
+tags: []
+user_id: root

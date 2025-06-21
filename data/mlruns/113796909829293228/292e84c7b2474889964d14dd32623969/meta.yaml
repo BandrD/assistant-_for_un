@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/292e84c7b2474889964d14dd32623969/artifacts
+end_time: 1750519455822
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 292e84c7b2474889964d14dd32623969
+run_name: entertaining-gnat-3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519455807
+status: 3
+tags: []
+user_id: root

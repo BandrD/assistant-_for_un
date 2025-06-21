@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/bde97379e31b400d8ab2309801a390a7/artifacts
+end_time: 1750517030813
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: bde97379e31b400d8ab2309801a390a7
+run_name: zealous-moth-476
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750517030791
+status: 3
+tags: []
+user_id: root

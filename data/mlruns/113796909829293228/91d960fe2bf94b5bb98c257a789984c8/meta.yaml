@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/91d960fe2bf94b5bb98c257a789984c8/artifacts
+end_time: 1750519810647
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 91d960fe2bf94b5bb98c257a789984c8
+run_name: rebellious-colt-446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519810620
+status: 3
+tags: []
+user_id: root

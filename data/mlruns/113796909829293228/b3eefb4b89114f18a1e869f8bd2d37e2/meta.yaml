@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/b3eefb4b89114f18a1e869f8bd2d37e2/artifacts
+end_time: 1750510856865
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: b3eefb4b89114f18a1e869f8bd2d37e2
+run_name: melodic-shrew-196
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750510856816
+status: 4
+tags: []
+user_id: root

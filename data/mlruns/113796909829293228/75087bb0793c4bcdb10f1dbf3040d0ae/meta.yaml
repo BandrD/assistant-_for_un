@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/75087bb0793c4bcdb10f1dbf3040d0ae/artifacts
+end_time: 1750511269525
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 75087bb0793c4bcdb10f1dbf3040d0ae
+run_name: omniscient-perch-140
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511269510
+status: 3
+tags: []
+user_id: root

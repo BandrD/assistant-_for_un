@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/6981a9d19f1b4590b6c41b6cd93811a9/artifacts
+end_time: 1750518747619
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 6981a9d19f1b4590b6c41b6cd93811a9
+run_name: funny-auk-240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518747599
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/3ec0b1d1efa64e85a32d3669d9ec7084/artifacts
+end_time: 1750515063531
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 3ec0b1d1efa64e85a32d3669d9ec7084
+run_name: enthused-asp-151
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515063516
+status: 3
+tags: []
+user_id: root

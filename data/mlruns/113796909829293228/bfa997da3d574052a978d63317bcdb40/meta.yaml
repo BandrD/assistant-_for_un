@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/bfa997da3d574052a978d63317bcdb40/artifacts
+end_time: 1750514165991
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: bfa997da3d574052a978d63317bcdb40
+run_name: sassy-bat-450
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750514165979
+status: 3
+tags: []
+user_id: root

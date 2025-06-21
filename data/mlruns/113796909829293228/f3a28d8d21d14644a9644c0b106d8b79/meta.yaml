@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/f3a28d8d21d14644a9644c0b106d8b79/artifacts
+end_time: 1750511624797
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: f3a28d8d21d14644a9644c0b106d8b79
+run_name: peaceful-mouse-667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511624782
+status: 3
+tags: []
+user_id: root

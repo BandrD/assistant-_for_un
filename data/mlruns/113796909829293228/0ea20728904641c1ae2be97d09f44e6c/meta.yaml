@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/0ea20728904641c1ae2be97d09f44e6c/artifacts
+end_time: 1750516558184
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 0ea20728904641c1ae2be97d09f44e6c
+run_name: amazing-wren-725
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516558168
+status: 3
+tags: []
+user_id: root

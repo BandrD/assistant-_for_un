@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/0c2d9c4e9386473f98948fa305261829/artifacts
+end_time: 1750511328487
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 0c2d9c4e9386473f98948fa305261829
+run_name: blushing-elk-322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511328472
+status: 3
+tags: []
+user_id: root

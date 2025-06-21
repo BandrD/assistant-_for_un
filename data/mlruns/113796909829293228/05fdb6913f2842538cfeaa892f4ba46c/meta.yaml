@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/05fdb6913f2842538cfeaa892f4ba46c/artifacts
+end_time: 1750517979817
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 05fdb6913f2842538cfeaa892f4ba46c
+run_name: spiffy-auk-49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750517979795
+status: 3
+tags: []
+user_id: root

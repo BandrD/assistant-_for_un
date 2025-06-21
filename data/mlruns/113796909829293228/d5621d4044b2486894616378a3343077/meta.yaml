@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/d5621d4044b2486894616378a3343077/artifacts
+end_time: 1750513692979
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: d5621d4044b2486894616378a3343077
+run_name: persistent-sheep-755
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513692964
+status: 3
+tags: []
+user_id: root

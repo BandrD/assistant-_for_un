@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/90e8e73f4063468ba2aacb4840d87a44/artifacts
+end_time: 1750510974864
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 90e8e73f4063468ba2aacb4840d87a44
+run_name: monumental-croc-667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750510974837
+status: 4
+tags: []
+user_id: root

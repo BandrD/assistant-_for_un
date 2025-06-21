@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/91ea8cf7a1424b93b13d4512c525f847/artifacts
+end_time: 1750513339335
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 91ea8cf7a1424b93b13d4512c525f847
+run_name: nimble-slug-189
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513339321
+status: 3
+tags: []
+user_id: root

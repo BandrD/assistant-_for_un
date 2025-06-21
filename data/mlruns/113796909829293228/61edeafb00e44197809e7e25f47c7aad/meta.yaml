@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/61edeafb00e44197809e7e25f47c7aad/artifacts
+end_time: 1750519633698
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 61edeafb00e44197809e7e25f47c7aad
+run_name: worried-hare-71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750519633683
+status: 3
+tags: []
+user_id: root

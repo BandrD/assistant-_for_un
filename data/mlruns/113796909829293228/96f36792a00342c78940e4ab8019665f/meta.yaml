@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/96f36792a00342c78940e4ab8019665f/artifacts
+end_time: 1750514638529
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 96f36792a00342c78940e4ab8019665f
+run_name: gaudy-goose-959
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750514638514
+status: 3
+tags: []
+user_id: root

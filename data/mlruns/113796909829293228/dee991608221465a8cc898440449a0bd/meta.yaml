@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/dee991608221465a8cc898440449a0bd/artifacts
+end_time: 1750518274891
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: dee991608221465a8cc898440449a0bd
+run_name: peaceful-quail-256
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750518274874
+status: 3
+tags: []
+user_id: root

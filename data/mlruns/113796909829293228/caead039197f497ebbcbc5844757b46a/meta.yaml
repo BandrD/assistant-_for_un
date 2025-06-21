@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/caead039197f497ebbcbc5844757b46a/artifacts
+end_time: 1750515790390
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: caead039197f497ebbcbc5844757b46a
+run_name: calm-gnu-529
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515790374
+status: 3
+tags: []
+user_id: root

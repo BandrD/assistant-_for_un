@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/da3390672f744f4da9b07f112a38e109/artifacts
+end_time: 1750511092736
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: da3390672f744f4da9b07f112a38e109
+run_name: gaudy-shrimp-68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750511092719
+status: 4
+tags: []
+user_id: root

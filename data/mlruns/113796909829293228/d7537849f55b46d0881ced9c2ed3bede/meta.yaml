@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/d7537849f55b46d0881ced9c2ed3bede/artifacts
+end_time: 1750512274656
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: d7537849f55b46d0881ced9c2ed3bede
+run_name: sincere-lamb-661
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750512274642
+status: 3
+tags: []
+user_id: root

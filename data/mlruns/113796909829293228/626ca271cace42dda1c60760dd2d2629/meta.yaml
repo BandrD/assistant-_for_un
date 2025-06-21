@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/626ca271cace42dda1c60760dd2d2629/artifacts
+end_time: 1750513812018
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 626ca271cace42dda1c60760dd2d2629
+run_name: big-ant-408
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513812004
+status: 3
+tags: []
+user_id: root

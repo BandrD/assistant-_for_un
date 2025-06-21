@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/8002682cee5d4a3f81f6e88385415b04/artifacts
+end_time: 1750516322098
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 8002682cee5d4a3f81f6e88385415b04
+run_name: loud-pug-120
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750516322083
+status: 3
+tags: []
+user_id: root

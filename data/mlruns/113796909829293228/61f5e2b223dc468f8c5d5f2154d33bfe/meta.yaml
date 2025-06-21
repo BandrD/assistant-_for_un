@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/61f5e2b223dc468f8c5d5f2154d33bfe/artifacts
+end_time: 1750513221091
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 61f5e2b223dc468f8c5d5f2154d33bfe
+run_name: bouncy-horse-816
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750513221077
+status: 3
+tags: []
+user_id: root

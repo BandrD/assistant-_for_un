@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/34bbb9bfca804c3e9c6a47da599a1f8c/artifacts
+end_time: 1750514342936
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 34bbb9bfca804c3e9c6a47da599a1f8c
+run_name: bittersweet-hen-979
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750514342920
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,14 @@
+artifact_uri: /mlruns/113796909829293228/73a44a6018094f59b4458d323482a499/artifacts
+end_time: 1750515323285
+entry_point_name: ''
+experiment_id: '113796909829293228'
+lifecycle_stage: active
+run_id: 73a44a6018094f59b4458d323482a499
+run_name: fearless-bug-274
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750515323262
+status: 3
+tags: []
+user_id: root
