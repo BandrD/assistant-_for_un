@@ -1,0 +1,24 @@
+[2025-06-23T19:16:29.533+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-06-23T19:16:29.538+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: university_pipeline.reindex scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-23T19:16:29.541+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: university_pipeline.reindex scheduled__2025-06-21T00:00:00+00:00 [queued]>
+[2025-06-23T19:16:29.541+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-06-23T19:16:29.720+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reindex> on 2025-06-21 00:00:00+00:00
+[2025-06-23T19:16:29.727+0000] {standard_task_runner.py:63} INFO - Started process 303 to run task
+[2025-06-23T19:16:29.730+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'university_pipeline', 'reindex', 'scheduled__2025-06-21T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpvoaimi6v']
+[2025-06-23T19:16:29.731+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask reindex
+[2025-06-23T19:16:29.768+0000] {task_command.py:426} INFO - Running <TaskInstance: university_pipeline.reindex scheduled__2025-06-21T00:00:00+00:00 [running]> on host 9347c82d28d2
+[2025-06-23T19:16:29.844+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='university_pipeline' AIRFLOW_CTX_TASK_ID='reindex' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T00:00:00+00:00'
+[2025-06-23T19:16:29.845+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-06-23T19:16:29.864+0000] {SentenceTransformer.py:189} INFO - Use pytorch device_name: cpu
+[2025-06-23T19:16:29.864+0000] {SentenceTransformer.py:197} INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+[2025-06-23T19:16:37.902+0000] {posthog.py:20} INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2025-06-23T19:16:37.970+0000] {logging_mixin.py:188} INFO - ChromaDB успешно инициализирован
+[2025-06-23T19:16:38.052+0000] {SentenceTransformer.py:189} INFO - Use pytorch device_name: cpu
+[2025-06-23T19:16:38.053+0000] {SentenceTransformer.py:197} INFO - Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+[2025-06-23T19:16:41.535+0000] {logging_mixin.py:188} INFO - ChromaDB успешно инициализирован
+[2025-06-23T19:16:41.685+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-06-23T19:16:41.686+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-06-23T19:16:41.689+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=university_pipeline, task_id=reindex, run_id=scheduled__2025-06-21T00:00:00+00:00, execution_date=20250621T000000, start_date=20250623T191629, end_date=20250623T191641
+[2025-06-23T19:16:41.774+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-06-23T19:16:41.783+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-23T19:16:41.807+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
