@@ -55,8 +55,8 @@ def callback(ch, method, properties, body):
 
 connection = connect_to_rabbitmq()
 channel = connection.channel()
-channel.queue_declare(queue="search")
-channel.queue_declare(queue="admin")
+channel.queue_declare(queue="search", durable=True)
+channel.queue_declare(queue="admin", durable=True)
 channel.basic_consume(queue="search", on_message_callback=callback)
 channel.basic_consume(queue="admin", on_message_callback=callback)
 channel.start_consuming()
